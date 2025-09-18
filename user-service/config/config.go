@@ -35,14 +35,14 @@ func NewConfig() *Config {
 			JwtIssuer:    viper.GetInt64("JWT_ISSUER"),
 		},
 		Psql: PsqlDB{
-			Host:      viper.GetString("DB_HOST"),
-			Port:      viper.GetInt("DB_PORT"),
-			User:      viper.GetString("DB_USER"),
-			Password:  viper.GetString("DB_PASSWORD"),
-			Dbname:    viper.GetString("DB_NAME"),
-			SSLMode:   viper.GetString("DB_SSL_MODE"),
-			DBMaxOpen: viper.GetInt("DB_MAX_OPEN"),
-			DBMaxIdle: viper.GetInt("DB_MAX_IDLE"),
+			Host:      viper.GetString("DATABASE_HOST"),
+			Port:      viper.GetInt("DATABASE_PORT"),
+			User:      viper.GetString("DATABASE_USER"),
+			Password:  viper.GetString("DATABASE_PASSWORD"),
+			Dbname:    viper.GetString("DATABASE_NAME"),
+			SSLMode:   viper.GetString("DATABASE_SSL_MODE"),
+			DBMaxOpen: viper.GetInt("DATABASE_MAX_OPEN"),
+			DBMaxIdle: viper.GetInt("DATABASE_MAX_IDLE"),
 		},
 	}
 }
